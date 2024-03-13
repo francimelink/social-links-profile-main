@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --netural-dark-grey: hsl(0, 0%, 12%);
+    --netural-off-black: hsl(0, 0%, 8%);
+
+    --font-size: 14px;
+
+    --font-normal: 400;
+    --font-bold: 600;
+    --font-bolder: 700;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--netural-off-black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-family: var(--font-family);
+}
+
+main {
+    background-color: var(--netural-dark-grey);
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 384px;
+    padding: 1.5rem;
+    border-radius: .75rem;
+}
+
+
+.person-avatar,
+.person-avatar>img {
+    width: 88px;
+}
+
+.person-avatar {
+    margin: 0 auto 1.5rem;
+
+}
+
+.person-name {
+    font-size: 1.5rem;
+    font-weight: var(--font-bolder);
+    line-height: 1.5;
+}
+
+
+
+.person-location {
+    color: var(--primary-green);
+    font-size: .875rem;
+    font-weight: var(--font-bolder);
+    line-height: 1.5;
+}
+
+.person-avatar>img {
+    border-radius: 50%;
+}
+
+.person-description {
+    font-size: .875rem;
+    margin-top: 1.5rem;
+}
+
+.social-media-container {
+    margin-top: 1.5rem;
+}
+
+.social-media-item {
+    background-color: var(--neutral-grey);
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: var(--neutral-white);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: .75rem 0;
+    font-weight: var(--font-bold);
+    font-size: .875rem;
+    border-radius: .5rem;
+}
+
+.social-media-link:hover {
+    color: var(--netural-dark-grey);
+    background-color: var(--primary-green);
+}
+
+
+@media only screen and (min-width: 992px) {
+    main {
+        padding: 2.5rem;
+    }
+}
